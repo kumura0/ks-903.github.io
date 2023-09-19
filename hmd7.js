@@ -99,24 +99,24 @@ function getRandomVideo() {
 
     
   
-  // アニメーションを実行する文字列
-  const textToAnimate = "currentVideoFileName.textContent";
+  // // アニメーションを実行する文字列
+  // const textToAnimate = "currentVideoFileName.textContent";
 
-  // 表示する要素を取得
-  const textElement = document.getElementById("textAnimation");
+  // // 表示する要素を取得
+  // const textElement = document.getElementById("textAnimation");
 
-  // アニメーションの速度（ミリ秒単位）
-  const animationSpeed = 100;
+  // // アニメーションの速度（ミリ秒単位）
+  // const animationSpeed = 100;
 
-  let currentIndex = 0;
+  // let currentIndex = 0;
 
-  function animateText() {
-      if (currentIndex < textToAnimate.length) {
-          textElement.textContent += textToAnimate.charAt(currentIndex);
-          currentIndex++;
-          setTimeout(animateText, animationSpeed);
-      }
-  }
+  // function animateText() {
+  //     if (currentIndex < textToAnimate.length) {
+  //         textElement.textContent += textToAnimate.charAt(currentIndex);
+  //         currentIndex++;
+  //         setTimeout(animateText, animationSpeed);
+  //     }
+  // }
   
   
 //関連ファイルの読み込み
@@ -191,7 +191,7 @@ hands.onResults(results => {
           
           currentVideoFileName.textContent = `説明`;
       // アニメーションを開始
-      animateText();
+     // animateText();
    
       } else if (OneSign && nonCrash)  {
         // Show the video element
